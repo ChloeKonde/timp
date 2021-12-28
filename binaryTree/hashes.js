@@ -114,9 +114,9 @@ stream.on('open', function(fd)
         randomHash = Math.floor(Math.random() * 4);
         hs.push(tempTree[randomHash]);
     }
-
-    stream.end();
-
+ 
+    stream.end(); 
+ 
     //search in the tree
     console.time('Execution Time');
     for (let i = 0; i < 1000; i++) 
