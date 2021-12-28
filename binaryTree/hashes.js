@@ -130,11 +130,11 @@ stream.on('open', function(fd)
         //search in the file after saving file  
         console.time('Execution Time'); 
         fs.readFileSync("data.txt").toString().split("\n").forEach(function(line, index, arr) {  
-            if (index === arr.length - 1 && line === "") { return; }
-            if (line.includes(hs[index]))
-                findings++; //used for checking that this works
-        });      
-        console.timeEnd('Execution Time');     
+            if (index === arr.length - 1 && line === "") { return; } 
+            if (line.includes(hs[index])) 
+                findings++; //used for checking that this works 
+        }); 
+            console.timeEnd('Execution Time'); 
     });   
 });
 
