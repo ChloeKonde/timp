@@ -125,8 +125,8 @@ stream.on('open', function(fd)
     }
     console.timeEnd('Execution Time');
 
-    stream.on('finish', () => {
-        let findings = 0; 
+    stream.on('finish', () => {  
+        let findings = 0;   
         //search in the file after saving file  
         console.time('Execution Time'); 
         fs.readFileSync("data.txt").toString().split("\n").forEach(function(line, index, arr) {  
@@ -136,9 +136,5 @@ stream.on('open', function(fd)
         });      
         console.timeEnd('Execution Time');     
     });   
-});      
+});
 
-   
-
-   
-  
