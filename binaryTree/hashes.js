@@ -134,6 +134,8 @@ stream.on('open', function(fd)
             if (line.includes(hs[index]))
                 findings++; //used for checking that this works
         });      
-        console.timeEnd('Execution Time');
-    });
-});
+        console.timeEnd('Execution Time');   
+    });   
+});   
+
+
