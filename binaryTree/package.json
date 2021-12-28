@@ -1,5 +1,18 @@
 {
   "dependencies": {
     "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  },
+  "scripts": {
+	       "_lint": "eslint --config ./.eslintrc.json --ext js --ext jsx --ext tsx --ext ts",
+	           "lint": "npm run _lint -- ./",
+		       "lint:fix": "npm run _lint -- --fix ./",
+		           "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc"
   }
 }
