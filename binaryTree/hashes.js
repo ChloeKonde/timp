@@ -16,7 +16,7 @@ class Node
 class Tree {
     constructor() 
     {
-        this.root = null;
+        this.root = null;  
     }
 
     insert(data, newOffset) 
