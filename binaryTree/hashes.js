@@ -18,7 +18,7 @@ class Tree {
     {
         this.root = null;  
     }
-
+  
     insert(data, newOffset) 
     {
 
@@ -137,4 +137,5 @@ stream.on('open', function(fd)
         console.timeEnd('Execution Time');     
     });   
 });
+
 
